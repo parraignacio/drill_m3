@@ -1,5 +1,3 @@
-import copy
-
 lista = ["Harry Houdini", "David Blaine", "Teller", "Newton", "Hawking", "Einstein", "Messi", "Pele", "Juanes"]
 
 magos = lista[:3]
@@ -13,7 +11,7 @@ for i in lista:
 
 
 def hacer_grandioso(a):
-    b = copy.deepcopy(a)
+    b = a[:]
     for i in range(len(b)):
         b[i] = "El gran " + b[i]
     return b
